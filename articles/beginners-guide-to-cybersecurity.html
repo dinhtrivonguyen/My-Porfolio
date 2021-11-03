@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+
+<!-- Mirrored from saadaslams.com/articles/beginners-guide-to-cybersecurity by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Nov 2021 00:24:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vo Nguyen Dinh Tri - Article</title>
+	<meta name="description" content="Card Expansion Effect with SVG clipPath" />
+	<meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+	<meta name="author" content="Claudio Calautti for Codrops" />
+	<link rel="shortcut icon" href="../assets/images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/card.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/pattern.css" />
+
+
+	<link rel="stylesheet" href="../assets/css/animate.css">
+
+	<link rel="stylesheet" href="../assets/css/slick.css">
+
+	<link rel="stylesheet" href="../assets/css/lineicons.css">
+
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<!--[if IE]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+		if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+			var root = document.getElementsByTagName('html')[0];
+			root.setAttribute('class', 'ff');
+		};
+	</script>
+</head>
+
+<body class="demo-1">
+	<section class="header_area" style="margin-bottom: 100px;">
+		<div class="header_navbar" style="background-color: #3498DB;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<nav class="navbar navbar-expand-lg">
+
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							 aria-expanded="false" aria-label="Toggle navigation">
+								<span class="toggler-icon"></span>
+								<span class="toggler-icon"></span>
+								<span class="toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+								<ul id="nav" class="navbar-nav ml-auto">
+										<li class="nav-item active">
+												<a class="page-scroll" href="../index.html">Home
+													<span></span>
+												</a>
+											</li>
+											<li class="nav-item">
+													<a class="page-scroll" href="article.html">Articles
+														<span></span>
+													</a>
+											</li>
+											
+											<li class="nav-item">
+												<a class="page-scroll" href="../appointment.html">Contact
+													<span></span>
+												</a>
+											</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div class="container">
+
+		<div class="content">
+
+			<!-- cards -->
+			<div class="wrapper">
+				<div>
+					<div class="card__container " style="margin-top: 80px">
+
+						<img src="../assets/images/msinspir.jpg" alt="author01" style=" display: block;margin-left: auto;margin-right: auto;" />
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">A Beginner's Guide to Cyber Security</h2>
+
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="../assets/images/authors/1.png" alt="author01" />
+									<span class="meta__author">Vo Nguyen Dinh Tri</span>
+									<span class="meta__date">11/01/2021</span>
+								</div>
+
+								<div class="pos" id="_100:101" style="top:101;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										This article looks at the fundamentals of cybersecurity, including basic terms and </span>
+								</div>
+								<div class="pos" id="_100:120" style="top:120;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										terminologies of security, the importance of data, attributes of data. and the CIA triad, </span>
+								</div>
+								<div class="pos" id="_100:139" style="top:139;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										confidentiality, integrity, and availability. It also looks at cybersecurity domains and </span>
+								</div>
+								<div class="pos" id="_100:158" style="top:158;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										different types of encryption techniques, like asymmetric and symmetric encryption. </span>
+								</div>
+								<div class="pos" id="_100:178" style="top:178;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:197" style="top:197;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										We will be covering the following topics:</span>
+								</div>
+								<div class="pos" id="_125:235" style="top:235;left:125">
+									<span id="_12.2" style=" font-family:Times New Roman; font-size:12.2px; color:#202020">
+										&#160;
+										<span id="_15.9" style=" font-family:Arial; font-size:15.9px"> What are Cyber, Cybersecurity, and Cyberspace?</span>
+									</span>
+								</div>
+								<div class="pos" id="_125:255" style="top:255;left:125">
+									<span id="_12.2" style=" font-family:Times New Roman; font-size:12.2px; color:#202020">
+										&#160;
+										<span id="_15.9" style=" font-family:Arial; font-size:15.9px"> Terms and Terminologies of Security</span>
+									</span>
+								</div>
+								<div class="pos" id="_125:274" style="top:274;left:125">
+									<span id="_12.2" style=" font-family:Times New Roman; font-size:12.2px; color:#202020">
+										&#160;
+										<span id="_15.9" style=" font-family:Arial; font-size:15.9px"> Cyber Security Domains</span>
+									</span>
+								</div>
+								<div class="pos" id="_125:293" style="top:293;left:125">
+									<span id="_12.6" style=" font-family:Times New Roman; font-size:12.6px; color:#202020">
+										&#160;
+										<span id="_16.5" style=" font-family:Arial; font-size:16.5px"> Network Models</span>
+									</span>
+								</div>
+								<div class="pos" id="_125:312" style="top:312;left:125">
+									<span id="_12.6" style=" font-family:Times New Roman; font-size:12.6px; color:#202020">
+										&#160;
+										<span id="_16.5" style=" font-family:Arial; font-size:16.5px"> Cyber Security Certifications</span>
+									</span>
+								</div>
+								<div class="pos" id="_125:331" style="top:331;left:125">
+									<span id="_12.6" style=" font-family:Times New Roman; font-size:12.6px; color:#202020">
+										&#160;
+										<span id="_16.5" style=" font-family:Arial; font-size:16.5px"> Cyber Threats</span>
+									</span>
+								</div>
+								<div class="pos" id="_100:372" style="top:372;left:100">
+									<span id="_24.7" style=" font-family:Arial; font-size:24.7px; color:#202020">
+										What is meant by the term &#147;Cyber&#148;?</span>
+								</div>
+								<div class="pos" id="_100:399" style="top:399;left:100">
+									<span id="_16.5" style=" font-family:Arial; font-size:16.5px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:418" style="top:418;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										Cyber means anything that is digital. It can be your devices that are performing the </span>
+								</div>
+								<div class="pos" id="_100:437" style="top:437;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										digital computation. Anything that is related to the Internet falls under the category of </span>
+								</div>
+								<div class="pos" id="_100:456" style="top:456;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										Cyber.</span>
+								</div>
+								<div class="pos" id="_100:475" style="top:475;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:496" style="top:496;left:100">
+									<span id="_23.9" style=" font-family:Arial; font-size:23.9px; color:#202020">
+										How big is cyberspace ?</span>
+								</div>
+								<div class="pos" id="_100:523" style="top:523;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:542" style="top:542;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										While Cyberspace should not be confused with the internet, the term is used to </span>
+								</div>
+								<div class="pos" id="_100:562" style="top:562;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										represent identities or events that take place in the communication process itself. For </span>
+								</div>
+								<div class="pos" id="_100:581" style="top:581;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										example, think of a website, it also exists in CyberSpace. Whether you share a post, </span>
+								</div>
+								<div class="pos" id="_100:600" style="top:600;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										upload a picture, or even send a message, all these social interactions exist in Cyber </span>
+								</div>
+								<div class="pos" id="_100:619" style="top:619;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										Space. This Cyber Space is expanding not in minutes but in seconds. These all events </span>
+								</div>
+								<div class="pos" id="_100:638" style="top:638;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										are taking place not on their physical locations but "in cyberspace". You can see an </span>
+								</div>
+								<div class="pos" id="_100:657" style="top:657;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										image below consisting of various digital devices that are connected through the </span>
+								</div>
+								<div class="pos" id="_100:677" style="top:677;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										internet. Their whole communications exist in cyberspace.</span>
+								</div>
+								<div class="pos" id="_100:729" style="top:729;left:100">
+									<span id="_23.9" style=" font-family:Arial; font-size:23.9px; color:#202020">
+										What is Cybersecurity? </span>
+								</div>
+								<div class="pos" id="_100:756" style="top:756;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:775" style="top:775;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										The term cybersecurity is used to refer to the security offered through online services to </span>
+								</div>
+								<div class="pos" id="_100:794" style="top:794;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										protect your online information.</span>
+								</div>
+								<div class="pos" id="_125:833" style="top:833;left:125">
+									<span id="_12.2" style=" font-family:Times New Roman; font-size:12.2px; color:#202020">
+										&#160;
+										<span id="_15.9" style=" font-family:Arial; font-size:15.9px"> Cybersecurity refers to the technologies and processes designed to protect </span>
+									</span>
+								</div>
+								<div class="pos" id="_150:852" style="top:852;left:150">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										computers, networks, and data from unauthorized access, vulnerabilities and </span>
+								</div>
+								<div class="pos" id="_150:871" style="top:871;left:150">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										attacks delivered via the Internet by cybercriminals</span>
+								</div>
+								<div class="pos" id="_125:890" style="top:890;left:125">
+									<span id="_12.2" style=" font-family:Times New Roman; font-size:12.2px; color:#202020">
+										&#160;
+										<span id="_15.9" style=" font-family:Arial; font-size:15.9px"> Cybersecurity is important for network, data and application security.</span>
+									</span>
+								</div>
+								<div class="pos" id="_100:929" style="top:929;left:100">
+									<span id="_15.9" style="font-weight:bold; font-family:Arial; font-size:15.9px; color:#202020">
+										The Need for Cyber Security</span>
+								</div>
+
+								<div class="pos" id="_125:1201" style="top:1201;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.1" style=" font-family:Arial; font-size:16.1px"> Cybersecurity is necessary because it helps secure data from threats such as </span>
+									</span>
+								</div>
+								<div class="pos" id="_150:1220" style="top:1220;left:150">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										data theft or misuse. It also safeguards your system from viruses</span>
+								</div>
+								<div class="pos" id="_125:1239" style="top:1239;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.1" style=" font-family:Arial; font-size:16.1px"> With an increasing amount of people getting connected to the Internet, security </span>
+									</span>
+								</div>
+								<div class="pos" id="_150:1258" style="top:1258;left:150">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										threats that cause massive harm are increasing as well.</span>
+								</div>
+								<div class="pos" id="_100:1299" style="top:1299;left:100">
+									<span id="_24.1" style=" font-family:Arial; font-size:24.1px; color:#202020">
+										Terms and Terminologies of Security</span>
+								</div>
+								<div class="pos" id="_100:1326" style="top:1326;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:1345" style="top:1345;left:100">
+									<span id="_16.1" style="font-weight:bold; font-family:Arial; font-size:16.1px; color:#202020">
+										Security vs Information Security</span>
+								</div>
+								<div class="pos" id="_100:1364" style="top:1364;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:1383" style="top:1383;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										Security can be any physical security, it includes everything in security and Information </span>
+								</div>
+								<div class="pos" id="_100:1403" style="top:1403;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										Security can also be any digital security and is bound to information.</span>
+								</div>
+								<div class="pos" id="_100:1422" style="top:1422;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:1441" style="top:1441;left:100">
+									<span id="_16.1" style="font-weight:bold; font-family:Arial; font-size:16.1px; color:#202020">
+										IT Security vs Network Security</span>
+								</div>
+								<div class="pos" id="_100:1460" style="top:1460;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:1479" style="top:1479;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										Information Security(IT) is of wider scope includes web, network anything related to IT, </span>
+								</div>
+								<div class="pos" id="_100:1498" style="top:1498;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										and network security is bounded to network.
+										<span style="font-weight:bold"> System Security</span> includes security of </span>
+								</div>
+								<div class="pos" id="_99:1518" style="top:1518;left:99">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										devices like mobile phones, computers, etc.</span>
+								</div>
+								<div class="pos" id="_100:1537" style="top:1537;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:1556" style="top:1556;left:100">
+									<span id="_16.1" style="font-weight:bold; font-family:Arial; font-size:16.1px; color:#202020">
+										Cyber Security vs IT Security</span>
+								</div>
+								<div class="pos" id="_100:1575" style="top:1575;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:1594" style="top:1594;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										Cyber Security includes digital security and IT security includes cybersecurity and also </span>
+								</div>
+								<div class="pos" id="_100:1613" style="top:1613;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										includes the physical security of systems highest which cybersecurity doesn&#146;t include </span>
+								</div>
+								<div class="pos" id="_100:1632" style="top:1632;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										physical security of systems.</span>
+								</div>
+								<div class="pos" id="_100:1652" style="top:1652;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:1671" style="top:1671;left:100">
+									<span id="_16.1" style="font-weight:bold; font-family:Arial; font-size:16.1px; color:#202020">
+										Note</span>
+								</div>
+								<div class="pos" id="_100:1690" style="top:1690;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										InfoSec is short for Information Security and Pentest is short of Penetration Testing.</span>
+								</div>
+								<div class="pos" id="_100:1709" style="top:1709;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:1730" style="top:1730;left:100">
+									<span id="_24.1" style=" font-family:Arial; font-size:24.1px; color:#202020">
+										Domains of Cyber Security</span>
+								</div>
+								<div class="pos" id="_100:1757" style="top:1757;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:1776" style="top:1776;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										Below are the domains of Cybersecurity:</span>
+								</div>
+								<div class="pos" id="_125:1815" style="top:1815;left:125">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										1. Access Control Systems and Methodology</span>
+								</div>
+								<div class="pos" id="_125:1834" style="top:1834;left:125">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										2. Telecommunications and Network Security</span>
+								</div>
+								<div class="pos" id="_125:1853" style="top:1853;left:125">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										3. Business Continuity Planning and Disaster Recovery Planning</span>
+								</div>
+								<div class="pos" id="_125:1872" style="top:1872;left:125">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										4. Security Management Practices</span>
+								</div>
+								<div class="pos" id="_125:1892" style="top:1892;left:125">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										5. Security Architecture and Models</span>
+								</div>
+								<div class="pos" id="_125:1911" style="top:1911;left:125">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										6. Law, Investigation, and Ethics</span>
+								</div>
+								<div class="pos" id="_125:1930" style="top:1930;left:125">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										7. Application and Systems Development Security</span>
+								</div>
+								<div class="pos" id="_125:1949" style="top:1949;left:125">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										8. Cryptography</span>
+								</div>
+								<div class="pos" id="_125:1968" style="top:1968;left:125">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										9. Computer Operations Security</span>
+								</div>
+								<div class="pos" id="_125:1987" style="top:1987;left:125">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+										10.Physical Security</span>
+								</div>
+								<div class="pos" id="_100:2026" style="top:2026;left:100">
+									<span id="_16.1" style="font-weight:bold; font-family:Arial; font-size:16.1px; color:#202020">
+										Access Control Systems and Methodology</span>
+								</div>
+								<div class="pos" id="_100:2045" style="top:2045;left:100">
+									<span id="_16.1" style=" font-family:Arial; font-size:16.1px; color:#202020">
+									</span>
+								</div>
+
+								<div class="pos" id="_100:2301" style="top:2301;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										The main purpose of Cyber Security is to protect your data. So first, we will get to know </span>
+								</div>
+								<div class="pos" id="_100:2320" style="top:2320;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										more about Data and the various access control systems and methodology.</span>
+								</div>
+								<div class="pos" id="_100:2339" style="top:2339;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:2358" style="top:2358;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Six Dimensions of Data Quality Assessment</span>
+								</div>
+								<div class="pos" id="_100:2378" style="top:2378;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:2397" style="top:2397;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										A Data Quality(DQ) Dimension is a recognized term used to describe the feature of data </span>
+								</div>
+								<div class="pos" id="_100:2416" style="top:2416;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										that can be assessed or measured against defined standards in order to measure the </span>
+								</div>
+								<div class="pos" id="_100:2435" style="top:2435;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										quality of data.</span>
+								</div>
+								<div class="pos" id="_100:2454" style="top:2454;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:2473" style="top:2473;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										The six core data quality dimensions are:</span>
+								</div>
+								<div class="pos" id="_125:2512" style="top:2512;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										1. Consistency</span>
+								</div>
+								<div class="pos" id="_125:2531" style="top:2531;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										2. Completeness</span>
+								</div>
+								<div class="pos" id="_125:2550" style="top:2550;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										3. Correctness</span>
+								</div>
+								<div class="pos" id="_125:2570" style="top:2570;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										4. Accessibility</span>
+								</div>
+								<div class="pos" id="_125:2589" style="top:2589;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										5. Timeliness</span>
+								</div>
+								<div class="pos" id="_125:2608" style="top:2608;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										6. Accuracy </span>
+								</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/cyberSecurityBeginners/1.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+										height: auto;">
+								</div>
+								<div class="pos" id="_100:2648" style="top:2648;left:100">
+									<span id="_24.0" style=" font-family:Arial; font-size:24.0px; color:#202020">
+										States of Data</span>
+								</div>
+								<div class="pos" id="_100:2675" style="top:2675;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:2694" style="top:2694;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										Understanding the different states of digital data can be helpful for you to select the </span>
+								</div>
+								<div class="pos" id="_100:2714" style="top:2714;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										different sorts of security measures and encryption techniques to apply to the data. </span>
+								</div>
+								<div class="pos" id="_100:2733" style="top:2733;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										Here we will discuss three states of data. </span>
+								</div>
+								<div class="pos" id="_100:2752" style="top:2752;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:2771" style="top:2771;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Data at rest/storage</span>
+								</div>
+								<div class="pos" id="_100:2790" style="top:2790;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:2809" style="top:2809;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										Data at rest refers to the data that has been stored on some sort of physical medium or </span>
+								</div>
+								<div class="pos" id="_100:2829" style="top:2829;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										backup medium like data stored on hard disks or even in mobile devices. What makes </span>
+								</div>
+								<div class="pos" id="_100:2848" style="top:2848;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										its data at rest that data is in an inactive form and is not currently being transmitted or </span>
+								</div>
+								<div class="pos" id="_100:2867" style="top:2867;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										processed.</span>
+								</div>
+								<div class="pos" id="_100:2886" style="top:2886;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:2905" style="top:2905;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Data in motion/transmission</span>
+								</div>
+								<div class="pos" id="_100:2924" style="top:2924;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:2944" style="top:2944;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										The second phase of data is in motion. Data in motion is currently transmitting on a </span>
+								</div>
+								<div class="pos" id="_100:2963" style="top:2963;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										network or is sitting on a computer's RAM ready to be read, updated, or processed. It </span>
+								</div>
+								<div class="pos" id="_100:2982" style="top:2982;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										can be emails or data transferred through FTP or SSH.</span>
+								</div>
+								<div class="pos" id="_100:3001" style="top:3001;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:3020" style="top:3020;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Data in process</span>
+								</div>
+								<div class="pos" id="_100:3039" style="top:3039;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:3059" style="top:3059;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										The third phase of data is in process or use. This state of data is not being stored </span>
+								</div>
+								<div class="pos" id="_100:3078" style="top:3078;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										passively on a storage medium. This is the data that is being processed by one or more </span>
+								</div>
+								<div class="pos" id="_100:3097" style="top:3097;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										applications. This is the data currently being generated, updated, appended, or erased.</span>
+								</div>
+								<div class="pos" id="_100:3116" style="top:3116;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:3137" style="top:3137;left:100">
+									<span id="_24.7" style=" font-family:Arial; font-size:24.7px; color:#202020">
+										CIA (Confidentiality- Integrity - Availability)</span>
+								</div>
+								<div class="pos" id="_100:3164" style="top:3164;left:100">
+									<span id="_16.4" style=" font-family:Arial; font-size:16.4px; color:#202020">
+									</span>
+								</div>
+
+								<div class="pos" id="_100:3401" style="top:3401;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										Confidentiality, Integrity, and Availability, known as the CIA triad, is a model designed to </span>
+								</div>
+								<div class="pos" id="_100:3420" style="top:3420;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										guide policies for information security within an organization. We will look more in-depth </span>
+								</div>
+								<div class="pos" id="_100:3439" style="top:3439;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										at each of the three.</span>
+								</div>
+								<div class="pos" id="_100:3458" style="top:3458;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:3478" style="top:3478;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Confidentiality</span>
+								</div>
+								<div class="pos" id="_125:3516" style="top:3516;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> It ensures that computer-related assets are accessed only by authorized parties </span>
+									</span>
+								</div>
+								<div class="pos" id="_150:3535" style="top:3535;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										sometimes called secrecy or privacy Measure undertaken to prevent sensitive </span>
+								</div>
+								<div class="pos" id="_150:3555" style="top:3555;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										information from reaching the wrong people and making sure that an authorized </span>
+								</div>
+								<div class="pos" id="_150:3574" style="top:3574;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										person can access it. </span>
+								</div>
+								<div class="pos" id="_125:3593" style="top:3593;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> The technique used is Encryption</span>
+									</span>
+								</div>
+								<div class="pos" id="_100:3632" style="top:3632;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Encryption to ensure Confidentiality</span>
+								</div>
+								<div class="pos" id="_100:3651" style="top:3651;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:3670" style="top:3670;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										Suppose we want the &#147;HELLO&#148;, we can apply encryption technique to replace every </span>
+								</div>
+								<div class="pos" id="_100:3689" style="top:3689;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										alphabet of HELLO with its neighbor alphabet like H replace with I, E with F, etc which </span>
+								</div>
+								<div class="pos" id="_100:3708" style="top:3708;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										makes the word not meaningful. Then we decrypt with the same technique used on </span>
+								</div>
+								<div class="pos" id="_100:3727" style="top:3727;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										another side.</span>
+								</div>
+								<div class="pos" id="_125:3766" style="top:3766;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> Bitlocker is a disk/drive-level encryption. We cannot apply BitLocker on file.</span>
+									</span>
+								</div>
+								<div class="pos" id="_125:3785" style="top:3785;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> Windows use the NTFS file system. There is EFS(Encrypted File System)-File </span>
+									</span>
+								</div>
+								<div class="pos" id="_150:3804" style="top:3804;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										Level Encryption. Right-click on file (Compress the contents in blue color).</span>
+								</div>
+								<div class="pos" id="_100:3843" style="top:3843;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Features of EFS</span>
+								</div>
+								<div class="pos" id="_100:3862" style="top:3862;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:3881" style="top:3881;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										There are two colors that show encryption and decryption.</span>
+								</div>
+								<div class="pos" id="_100:3900" style="top:3900;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:3920" style="top:3920;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										This whole process depends on Policies. To keep backup of data, when an employee </span>
+								</div>
+								<div class="pos" id="_100:3939" style="top:3939;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										resigns, the company formats the system which also loses the BitLocker keys and other </span>
+								</div>
+								<div class="pos" id="_100:3958" style="top:3958;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										stuff.</span>
+								</div>
+								<div class="pos" id="_100:3977" style="top:3977;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:3998" style="top:3998;left:100">
+									<span id="_24.0" style=" font-family:Arial; font-size:24.0px; color:#202020">
+										Types of Encryption</span>
+								</div>
+								<div class="pos" id="_100:4025" style="top:4025;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:4044" style="top:4044;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										There are two top-level types of encryption, Symmetric and Asymmetric </span>
+								</div>
+								<div class="pos" id="_100:4063" style="top:4063;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:4082" style="top:4082;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Symmetric Encryption</span>
+								</div>
+								<div class="pos" id="_125:4121" style="top:4121;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> Uses the Same Key to encrypt or decrypt data.</span>
+									</span>
+								</div>
+								<div class="pos" id="_125:4140" style="top:4140;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> Consider a desktop password manager application. You enter your password </span>
+									</span>
+								</div>
+								<div class="pos" id="_150:4159" style="top:4159;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										and they encrypted with your own personal key. When the data is to be retrieved, </span>
+								</div>
+								<div class="pos" id="_150:4179" style="top:4179;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										the same key is used, and the data is decrypted</span>
+								</div>
+								<div class="pos" id="_100:4217" style="top:4217;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Asymmetric Encryption</span>
+								</div>
+								<div class="pos" id="_125:4256" style="top:4256;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> Uses a Private key and Public Keypair </span>
+									</span>
+								</div>
+
+								<div class="pos" id="_125:4501" style="top:4501;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> Either key can encrypt but a single key can&#146;t decrypt its own decrypted data. To </span>
+									</span>
+								</div>
+								<div class="pos" id="_150:4520" style="top:4520;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										decrypt, you need the paired key.</span>
+								</div>
+								<div class="pos" id="_125:4539" style="top:4539;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> Asymmetric encryption is used for things like Transport Layer Security(TLS) used </span>
+									</span>
+								</div>
+								<div class="pos" id="_150:4558" style="top:4558;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										in HTTPS and data signing</span>
+									<div class="pos" id="_0:0" style="top:4400">
+										<img name="_1100:850" src="../assets/images/article/cyberSecurityBeginners/2.png" height="600" width="850" border="0" usemap="#Map"
+										 style="width: 100%;
+										height: auto;">
+									</div>
+
+								</div>
+								<div class="pos" id="_100:4911" style="top:4911;left:100">
+									<span id="_24.0" style=" font-family:Arial; font-size:24.0px; color:#202020">
+										Access Controls</span>
+								</div>
+								<div class="pos" id="_100:4938" style="top:4938;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:4958" style="top:4958;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										Access controls authenticate and authorize individuals to access the information they </span>
+								</div>
+								<div class="pos" id="_100:4977" style="top:4977;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										are allowed to see and use.</span>
+								</div>
+								<div class="pos" id="_125:5015" style="top:5015;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										1. Something you know - (you know passwords)</span>
+								</div>
+								<div class="pos" id="_125:5034" style="top:5034;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										2. Something you are - (biometric scan)</span>
+								</div>
+								<div class="pos" id="_125:5054" style="top:5054;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										3. Something you have - (ATM card)</span>
+								</div>
+								<div class="pos" id="_125:5073" style="top:5073;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										4. Something you do - (signature style)</span>
+								</div>
+								<div class="pos" id="_100:5113" style="top:5113;left:100">
+									<span id="_24.0" style=" font-family:Arial; font-size:24.0px; color:#202020">
+										Integrity of Data</span>
+								</div>
+								<div class="pos" id="_100:5140" style="top:5140;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:5159" style="top:5159;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Integrity</span>
+								</div>
+								<div class="pos" id="_100:5178" style="top:5178;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:5198" style="top:5198;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										It means that assets can be modified only by authorized parties or only in authorized </span>
+								</div>
+								<div class="pos" id="_100:5217" style="top:5217;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										ways. Ensures that information is in a format that is true and correct to its original </span>
+								</div>
+								<div class="pos" id="_100:5236" style="top:5236;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										purposes. It involves maintaining the consistency, accuracy, and trustworthiness of data </span>
+								</div>
+								<div class="pos" id="_100:5255" style="top:5255;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										in its entire life cycle.</span>
+								</div>
+								<div class="pos" id="_100:5274" style="top:5274;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:5293" style="top:5293;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										The technique used is Hash</span>
+								</div>
+								<div class="pos" id="_100:5313" style="top:5313;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:5332" style="top:5332;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Hash</span>
+								</div>
+								<div class="pos" id="_100:5351" style="top:5351;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+
+								<div class="pos" id="_100:5601" style="top:5601;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										Hash Calculator takes a file as input and applies algorithms. The purpose of hashing is </span>
+								</div>
+								<div class="pos" id="_100:5620" style="top:5620;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										to show that the original file is not modified.</span>
+								</div>
+								<div class="pos" id="_100:5639" style="top:5639;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:5658" style="top:5658;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										Let's have a practical implementation of hashing using the Microsoft File Checksum </span>
+								</div>
+								<div class="pos" id="_100:5678" style="top:5678;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										Integrity Verifier. You can download it from the internet.</span>
+								</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/cyberSecurityBeginners/3.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+										height: auto;">
+								</div>
+
+								<div class="pos" id="_100:5697" style="top:5697;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:5735" style="top:5735;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:5754" style="top:5754;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										You need to open a command prompt in the directory where your file is located. We will </span>
+								</div>
+								<div class="pos" id="_100:5773" style="top:5773;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+										check the integrity of a text file. To apply this hashing technique:</span>
+								</div>
+								<div class="pos" id="_100:5793" style="top:5793;left:100">
+									<span id="_15.9" style=" font-family:Arial; font-size:15.9px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:5812" style="top:5812;left:100">
+									<span id="_15.9" style="font-style:italic; font-family:Arial; font-size:15.9px; color:#202020">
+										fciv "filename with the extension" hashing algorithm =&gt; fciv readme.txt -sha1</span>
+								</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/cyberSecurityBeginners/4.png" height="400" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+										height: auto;">
+								</div>
+
+								<div class="pos" id="_100:5850" style="top:5850;left:100">
+									<span id="_14.6" style=" font-family:Arial; font-size:14.6px; color:#202020">
+										Here you can see a Hash code generated of that file. Now we will modify the file by adding </span>
+								</div>
+								<div class="pos" id="_100:5867" style="top:5867;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										some letters in the text file and will again apply the hashing technique on the same file.</span>
+								</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/cyberSecurityBeginners/5.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+										height: auto;">
+								</div>
+
+								<div class="pos" id="_100:5903" style="top:5903;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										Here, you can see the Hash Code has been changed. This shows that the file has been </span>
+								</div>
+								<div class="pos" id="_100:5920" style="top:5920;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										modified and no longer in its original form. If we revert the changes that we made in the file and </span>
+								</div>
+								<div class="pos" id="_100:5938" style="top:5938;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										again apply the hashing technique, let's see what happens.</span>
+								</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/cyberSecurityBeginners/6.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+										height: auto;">
+								</div>
+
+								<div class="pos" id="_100:5973" style="top:5973;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										Below, you can see a diagram where there is plaintext on which a hash function has been </span>
+								</div>
+								<div class="pos" id="_100:5990" style="top:5990;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										applied. After applying the hash function, it generates a hashed text. This hashing technique is </span>
+								</div>
+								<div class="pos" id="_100:6008" style="top:6008;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										also being used in Cyber Forensics.</span>
+								</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/cyberSecurityBeginners/7.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+										height: auto;">
+								</div>
+
+								<div class="pos" id="_100:6045" style="top:6045;left:100">
+									<span id="_24.7" style=" font-family:Arial; font-size:24.7px; color:#202020">
+										Availability of Data</span>
+								</div>
+								<div class="pos" id="_100:6072" style="top:6072;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:6102" style="top:6102;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										This means that assets are accessible to authorized parties at appropriate times. High </span>
+								</div>
+								<div class="pos" id="_100:6121" style="top:6121;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										Availability (99.9%) where 0.1% is error rate and when increased 99.999 uptime 0.0001 error </span>
+								</div>
+								<div class="pos" id="_100:6140" style="top:6140;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										rate. It is implemented using methods such as hardware maintenance, software patching, and </span>
+								</div>
+								<div class="pos" id="_100:6159" style="top:6159;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										network optimization.</span>
+								</div>
+								<div class="pos" id="_100:6189" style="top:6189;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:6219" style="top:6219;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										A classic example of a loss of availability to a malicious actor is a Denial of Service Attack </span>
+								</div>
+								<div class="pos" id="_100:6238" style="top:6238;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										(DOS).</span>
+								</div>
+								<div class="pos" id="_100:6268" style="top:6268;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:6298" style="top:6298;left:100">
+									<span id="_15.1" style="font-weight:bold; font-family:Arial; font-size:15.1px; color:#202020">
+										SLA</span>
+								</div>
+								<div class="pos" id="_100:6328" style="top:6328;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:6358" style="top:6358;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										Service Level Agreement is a binding document. It is a commitment between a service provider </span>
+								</div>
+								<div class="pos" id="_100:6377" style="top:6377;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										and a client. Particular aspects of service - quality, availability, responsibilities are agreed </span>
+								</div>
+								<div class="pos" id="_100:6396" style="top:6396;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										between the service provider and service user If the service user doesn&#146;t receive files in time </span>
+								</div>
+								<div class="pos" id="_100:6415" style="top:6415;left:100">
+									<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#202020">
+										then service providers are fined.</span>
+								</div>
+								<div class="pos" id="_100:6445" style="top:6445;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										Before discussing the types of DOS attacks, let's have a look at Ping Command.</span>
+								</div>
+								<div class="pos" id="_100:6465" style="top:6465;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+
+								<div class="pos" id="_100:6701" style="top:6701;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Ping Command</span>
+								</div>
+								<div class="pos" id="_125:6740" style="top:6740;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> Ping is a computer network administration software utility used to test the </span>
+									</span>
+								</div>
+								<div class="pos" id="_150:6759" style="top:6759;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										reachability of a host on an Internet Protocol network. A simple way to verify that </span>
+								</div>
+								<div class="pos" id="_150:6778" style="top:6778;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										a computer can communicate over the network with another computer or network </span>
+								</div>
+								<div class="pos" id="_150:6797" style="top:6797;left:150">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										device</span>
+								</div>
+								<div class="pos" id="_125:6816" style="top:6816;left:125">
+									<span id="_12.3" style=" font-family:Times New Roman; font-size:12.3px; color:#202020">
+										&#160;
+										<span id="_16.0" style=" font-family:Arial; font-size:16.0px"> Ping 127.0.0.1 (127.0.0.1 is a loopback address)</span>
+									</span>
+								</div>
+								<div class="pos" id="_100:6857" style="top:6857;left:100">
+									<span id="_24.0" style=" font-family:Arial; font-size:24.0px; color:#202020">
+										Types of DOS Attacks</span>
+								</div>
+								<div class="pos" id="_100:6884" style="top:6884;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:6903" style="top:6903;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										Will discuss a few of the DOS Attacks:</span>
+								</div>
+								<div class="pos" id="_125:6941" style="top:6941;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										1. Ping of Death</span>
+								</div>
+								<div class="pos" id="_125:6961" style="top:6961;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										2. Ping of Flood</span>
+								</div>
+								<div class="pos" id="_125:6980" style="top:6980;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										3. Smurf Attack</span>
+								</div>
+								<div class="pos" id="_125:6999" style="top:6999;left:125">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										4. Fraggle Attack</span>
+								</div>
+								<div class="pos" id="_100:7038" style="top:7038;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Ping of Death</span>
+								</div>
+								<div class="pos" id="_100:7057" style="top:7057;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:7076" style="top:7076;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										A Ping of Death attack is a Denial of Service (DoS) attack, in which the attacker aims to </span>
+								</div>
+								<div class="pos" id="_100:7095" style="top:7095;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										disrupt a targeted machine by sending a packet larger than the maximum allowable </span>
+								</div>
+								<div class="pos" id="_100:7114" style="top:7114;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										size, causing the target machine to freeze or crash.</span>
+								</div>
+								<div class="pos" id="_100:7153" style="top:7153;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Ping of Flood</span>
+								</div>
+								<div class="pos" id="_100:7172" style="top:7172;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:7191" style="top:7191;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										Ping flood, also known as ICMP flood, is a common Denial of Service (DoS) attack in </span>
+								</div>
+								<div class="pos" id="_100:7210" style="top:7210;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										which an attacker takes down a victim&#146;s computer by overwhelming it with ICMP echo </span>
+								</div>
+								<div class="pos" id="_100:7229" style="top:7229;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										requests, also known as pings. Example: Education Board Website.</span>
+								</div>
+								<div class="pos" id="_100:7267" style="top:7267;left:100">
+									<span id="_16.0" style="font-weight:bold; font-family:Arial; font-size:16.0px; color:#202020">
+										Fraggle Attack</span>
+								</div>
+								<div class="pos" id="_100:7287" style="top:7287;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+									</span>
+								</div>
+								<div class="pos" id="_100:7306" style="top:7306;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										A Fraggle attack is a type of DOS attack where the attacker sends a large number of </span>
+								</div>
+								<div class="pos" id="_100:7325" style="top:7325;left:100">
+									<span id="_16.0" style=" font-family:Arial; font-size:16.0px; color:#202020">
+										spoofed UDP traffic to a router's broadcast address within a network. </span>
+								</div>
+
+								</nowrap>
+								</nobr>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+			<!-- /cards -->
+		</div>
+		<!-- /content -->
+
+	</div>
+	<!-- /container -->
+
+
+	<!-- JS -->
+
+	<script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+	<script src="../assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+	<script src="../assets/js/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+
+	<script src="../assets/js/slick.min.js"></script>
+
+	<script src="../assets/js/ajax-contact.html"></script>
+
+	<script src="../assets/js/jquery.appear.min.js"></script>
+
+	<script src="../assets/js/waypoints.min.js"></script>
+	<script src="../assets/js/jquery.counterup.min.js"></script>
+
+	<script src="../assets/js/jquery.easing.min.js"></script>
+	<script src="../assets/js/scrolling-nav.js"></script>
+
+	<script src="../assets/js/wow.min.js"></script>
+
+	<script src="../assets/js/main.js"></script>
+	<script defer src="../../static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"69cfd0ea2aae4840","version":"2021.9.0","r":1,"token":"e30b4e5ca0154d28b74c094697cafe5d","si":100}'></script>
+
+</body>
+
+
+<!-- Mirrored from saadaslams.com/articles/beginners-guide-to-cybersecurity by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Nov 2021 00:24:21 GMT -->
+</html>

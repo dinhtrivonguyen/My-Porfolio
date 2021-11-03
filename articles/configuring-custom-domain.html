@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+
+<!-- Mirrored from saadaslams.com/articles/configuring-custom-domain by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Nov 2021 00:23:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vo Nguyen Dinh Tri - Article</title>
+	<meta name="description" content="Card Expansion Effect with SVG clipPath" />
+	<meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+	<meta name="author" content="Claudio Calautti for Codrops" />
+	<link rel="shortcut icon" href="../assets/images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/card.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/pattern.css" />
+
+
+	<link rel="stylesheet" href="../assets/css/animate.css">
+
+	<link rel="stylesheet" href="../assets/css/slick.css">
+
+	<link rel="stylesheet" href="../assets/css/lineicons.css">
+
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<!--[if IE]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+		if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+			var root = document.getElementsByTagName('html')[0];
+			root.setAttribute('class', 'ff');
+		};
+	</script>
+</head>
+
+<body class="demo-1">
+	<section class="header_area" style="margin-bottom: 100px;">
+		<div class="header_navbar" style="background-color: #3498DB;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<nav class="navbar navbar-expand-lg">
+
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							 aria-expanded="false" aria-label="Toggle navigation">
+								<span class="toggler-icon"></span>
+								<span class="toggler-icon"></span>
+								<span class="toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+								<ul id="nav" class="navbar-nav ml-auto">
+										<li class="nav-item active">
+												<a class="page-scroll" href="../index.html">Home
+													<span></span>
+												</a>
+											</li>
+											<li class="nav-item">
+													<a class="page-scroll" href="article.html">Articles
+														<span></span>
+													</a>
+											</li>
+											
+											<li class="nav-item">
+												<a class="page-scroll" href="../appointment.html">Contact
+													<span></span>
+												</a>
+											</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div class="container">
+
+		<div class="content">
+
+			<!-- cards -->
+			<div class="wrapper">
+				<div>
+					<div class="card__container " style="margin-top: 80px">
+
+						<img src="../assets/images/article/configuringCustomDomain/0.png" alt="author01" style=" display: block;margin-left: auto;margin-right: auto;"
+						/>
+						<div class="card__caption">
+
+							<p class="card__subtitle">Configuring A Custom Domain Name For Your Github Pages Site Using Azure App Service Domains</p>
+						</div>
+						<div class="card__copy">
+							<div class="meta">
+								<img class="meta__avatar" src="../assets/images/authors/1.png" alt="author01" />
+								<span class="meta__author">Vo Nguyen Dinh Tri</span>
+								<span class="meta__date">11/01/2021</span>
+							</div>
+							<h2 style="box-sizing: border-box; font-family: Roboto, sans-serif; font-weight: 400; line-height: 1.1; color: rgb(33, 33, 33); margin-top: 0px; margin-bottom: 0px; font-size: 24px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Introduction</h2>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>This article looks at how to configure the&nbsp;custom domain name for your Github Pages site using Azure service
+								-App Service Domains.&nbsp;App Service Domains allows you to purchase and manage a domain name within a few minutes.
+								We will look at simplified domain life cycle management and purchasing and managing domains for your Azure Services.
+								So grab a cup of coffee and follow along through this article up to the end, and you will be able to configure the
+								custom domain name for your very own Github Page site.</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>Will be covering the following topics:</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+								<ul style="box-sizing: border-box;">
+									<li style="box-sizing: border-box;">Step 1: How to set up a Github Page</li>
+									<li style="box-sizing: border-box;">Step 2: How to purchase a Custom Domain name through Azure App Service Domains(don&apos;t worry will have something
+										special for students)</li>
+									<li style="box-sizing: border-box;">Step 3: How to install Dig for DNS Lookup.</li>
+									<li style="box-sizing: border-box;">Step 4: Configuring the DNS record.</li>
+								</ul>
+								<div style="box-sizing: border-box; font-size: 16px !important;">
+									<strong style="box-sizing: border-box;">Step 1 - How to set up a Github Page</strong>
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">GitHub Pages are public webpages hosted and easily published through GitHub. The quickest way to get up and running
+									is by using the Jekyll Theme Chooser to load a pre-made theme. You can then modify your GitHub Pages&rsquo; content
+									and style remotely via the web or locally on your computer.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/1.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">The very first thing that you need to do is to have a Github Page (Note: if you already have any website and wants
+									to configure a custom domain for that so then you can skip this step and can continue with Step 2 that is purchasing
+									a custom domain name through Azure App Service Domains).&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">We have to create a new Repository on our Github account through the link
+									<em style="box-sizing: border-box;">https://github.com/new</em>.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/2.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">In the repository name, you have to type your own Github Username, like in my case its saad2128 but yours will be
+									different. You have to fill that repository name with username.github.io .Here, you will notice that the username
+									will be your Github username and .github.io will remain the same. I already have one, so I am not creating another
+									one and in my case, it&apos;s saad2128.github.io. After writing the repository name, you have created the repository.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/3.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">After creating the repository, you will be able to see an empty repository where you can add your website code. It
+									can be your portfolio or anything you want to show something to the world. If you don&apos;t have any portfolio
+									or website available to host now then you can use any of the themes available on the Internet to follow along with
+									this article. (Note: Github Pages are suitable to host static websites or portfolios up to limited space, it&apos;s
+									not preferred to use it for E-Commerce websites or something like that).</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">Now you have to upload the files of your project. There are two options available; you can upload the files using
+									Git commands, or you can simply upload the files through the upload button available</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/4.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">After uploading the files, go to settings of the repository in the top right corner and scroll down to Github Pages.
+									Here, you will see a message displaying that your site is published at username.github.io (Note: I have already
+									configured custom domain name for my repository so it&apos;s showing my custom domain name but in your case, it
+									will show your username.github.io). You can copy that link username.github.io and paste it in your browser and you
+									can see that your website is live and hosted on Github.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">Hurray!! you have got your Website live and being hosted on Github. But that&apos;s not the end. We have to give
+									our Website a cool custom domain name so that we can share it with our clients and recruiters so that I will give
+									a more professional look. Here&apos;s a screenshot of how your website will be hosted with username.github.io, it
+									is before configuring our custom domain name.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/5.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">
+									<strong style="box-sizing: border-box;">Step 2 - How to Purchase a Custom Domain Name through Azure App Service Domains</strong>
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">You have done a great job up to now and have successfully set up your Github Page! Now we have to buy a cool custom
+									domain name for your Github Page. For this, you have created an account on Microsoft Azure through the&nbsp;
+									<a href="https://azure.microsoft.com/en-us" rel="nofollow" style="box-sizing: border-box; color: rgb(30, 136, 229); text-decoration: none; cursor: pointer;"
+									 target="_blank">link</a>.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/6.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+							</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>Microsoft has something special for students to help them out to use Azure for free and its called Azure for Students.
+								Students just have to use sign up an account using their University email and they will get $100 Azure Credits to
+								use Azure Services and learn the best from it. Students can get their free accounts through this
+								<a href="https://azure.microsoft.com/en-us/free/students/" rel="nofollow" style="box-sizing: border-box; color: rgb(30, 136, 229); text-decoration: none; cursor: pointer;"
+								 target="_blank">link</a>.</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+							<div class="pos" id="_0:0" style="top:4400">
+								<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/7.png" height="600" width="850" border="0" usemap="#Map"
+								 style="width: 100%;
+	height: auto;">
+							</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>Once you have logged in to your account, you will see an Azure Portal. In the search bar, look for App Service Domains.</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+							<div class="pos" id="_0:0" style="top:4400">
+								<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/8.png" height="600" width="850" border="0" usemap="#Map"
+								 style="width: 100%;
+	height: auto;">
+							</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>After clicking on Create App Service Domain, you will see a dashboard to search for your custom domain and choose
+								your subscription (in the case of students, it will be Azure for students. In my case, I have used Visual Studio
+								Enterprise Subscription&nbsp;). Go through your contact information, privacy protection, legal terms, and then click
+								on the Create button.</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+							<div class="pos" id="_0:0" style="top:4400">
+								<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/9.png" height="600" width="850" border="0" usemap="#Map"
+								 style="width: 100%;
+	height: auto;">
+							</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>After clicking on create, it will take a couple of minutes for the deployment. Afterward, you can your custom domain
+								name details.&nbsp;</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+							<div class="pos" id="_0:0" style="top:4400">
+								<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/10.png" height="600" width="850" border="0" usemap="#Map"
+								 style="width: 100%;
+	height: auto;">
+							</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;</div>
+							<div style='box-sizing: border-box; font-size: 16px; color: rgb(33, 33, 33); font-family: "open sans", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+								<div style="box-sizing: border-box; font-size: 16px !important;">Hurray! You have purchased your very own custom domain name through Azure App Service Domain
+									<img data-src="/CuteSoft_Client/CuteEditor/Images/emsmile.gif" alt="Configuring A Custom Domain Name For Your Github Pages Site Using Azure App Service Domains"
+									 border="0" src="../../www.c-sharpcorner.com/CuteSoft_Client/CuteEditor/Images/emsmile.gif" style="box-sizing: border-box; max-width: 100%;">&nbsp;. Now we have completed step 2.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">
+									<strong style="box-sizing: border-box;">Step 3 - How to Install Dig for DNS Lookup</strong>
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">The Domain Name System(DNS) is the phonebook of the internet. Web Browsers interact through Internet Protocol Addresses.DNS
+									translates domain names to IP addresses so browsers can load Internet resources. Each device connected on the Internet
+									has a unique IP address that other machines use to find the device.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">
+									<div style="box-sizing: border-box; font-size: 16px !important;">Download the&nbsp;dig command tool for windows and perform advanced DNS queries using dig command on windows. The
+										dig command which comes as a part of Linux is very useful for performing DNS lookups on domain names and provides
+										detailed information like TTL and class type. It is now possible to use the dig command on windows also</div>
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">First, go
+									<a href="http://www.isc.org/downloads/" rel="noopener" style="box-sizing: border-box; color: rgb(30, 136, 229); text-decoration: none; cursor: pointer;"
+									 target="_blank">here</a> and look for the BIND, then click on the download button.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">
+									<br>
+								</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/11.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">When you download and extract the files, search for .dll files and dig.exe in the folder and copy /paste all these
+									11 files&nbsp;in&nbsp;C:\Windows\System32</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/12.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">After that, open any command prompt. In my case, I am using Git Bash. type dig example.com.Here, example.com will
+									be your domain name.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/13.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">Hurray!! you have figured it out how to install dig and how to perform DNS lookup.
+									<img data-src="/CuteSoft_Client/CuteEditor/Images/emsmile.gif" alt="Configuring A Custom Domain Name For Your Github Pages Site Using Azure App Service Domains"
+									 border="0" src="../../www.c-sharpcorner.com/CuteSoft_Client/CuteEditor/Images/emsmile.gif" style="box-sizing: border-box; max-width: 100%;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">
+									<strong style="box-sizing: border-box;">Step 4 - Configuring the DNS record</strong>
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">The last step is to configure the DNS record of your custom domain so that your domain will be connected to the Github
+									Page you created at the very start of this Article. So again let&apos;s move to Azure Portal and click on the Manage
+									DNS Records.&nbsp;After clicking on it, you will DNS settings for your domain. After that, click on Record Set.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/14.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">Search for a record set through the search bar given below. If you find www&nbsp;in the search then it will be your
+									subdomain otherwise it will be an apex domain.&nbsp;In my case, its an apex domain. Next, we have to create a&nbsp;record.
+									Point your apex domain to the IP addresses for GitHub Pages provided in the screenshot below or you can have it
+									from&nbsp;
+									<a href="https://help.github.com/" rel="noopener" style="box-sizing: border-box; color: rgb(30, 136, 229); text-decoration: none; cursor: pointer;"
+									 target="_blank">here</a>. After writing the IP addresses click OK&nbsp;Note that IP Addresses given in the screenshot will remain
+									the same. This will point your domain to Github but we still need to do some more configuration to point the domain
+									to your respective Github Page.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">
+									<br>
+								</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/15.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">After that, once again go back to your Github account and go to the root folder of your repository you just created
+									at the start of this article and create a new file named CNAME.&nbsp;All alphabets are capitalized. In that file,
+									write the complete domain name of the configured DNS Settings.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/16.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/17.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">The last step is to go to settings of your Github Repository and scroll down Github Pages section, where you have
+									to write your domain name in the custom domain&nbsp;section and save it and also click on Enforce HTTPS, which prevents
+									others from tampering with traffic to your site.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div class="pos" id="_0:0" style="top:4400">
+									<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/18.png" height="600" width="850" border="0" usemap="#Map"
+									 style="width: 100%;
+		height: auto;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">You can see that the Github Page shows a message that your domain has been hosted on your custom domain.</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">
+									<div class="pos" id="_0:0" style="top:4400">
+										<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/19.png" height="600" width="850" border="0" usemap="#Map"
+										 style="width: 100%;
+				height: auto;">
+									</div>
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">All done, you have successfully configured custom domain to your Github Page using Azure App Service Domains. Now
+									copy/paste your domain to the browser and here you go!
+									<img data-src="/CuteSoft_Client/CuteEditor/Images/emsmile.gif" alt="Configuring A Custom Domain Name For Your Github Pages Site Using Azure App Service Domains"
+									 border="0" src="../../www.c-sharpcorner.com/CuteSoft_Client/CuteEditor/Images/emsmile.gif" style="box-sizing: border-box; max-width: 100%;">
+									<img data-src="/CuteSoft_Client/CuteEditor/Images/emstar.gif" alt="Configuring A Custom Domain Name For Your Github Pages Site Using Azure App Service Domains"
+									 border="0" src="../../www.c-sharpcorner.com/CuteSoft_Client/CuteEditor/Images/emstar.gif" style="box-sizing: border-box; max-width: 100%;">
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">
+									<div class="pos" id="_0:0" style="top:4400">
+										<img name="_1100:850" src="../assets/images/article/configuringCustomDomain/20.png" height="600" width="850" border="0" usemap="#Map"
+										 style="width: 100%;
+				height: auto;">
+									</div>
+								</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+								<div style="box-sizing: border-box; font-size: 16px !important;">
+									<h2 style="box-sizing: border-box; font-family: Roboto, sans-serif; font-weight: 400; line-height: 1.1; color: inherit; margin-top: 0px; margin-bottom: 0px; font-size: 24px;">Conclusion&nbsp;</h2>
+									<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+									<div style="box-sizing: border-box; font-size: 16px !important;">What&rsquo;s next?</div>
+									<div style="box-sizing: border-box; font-size: 16px !important;">&nbsp;</div>
+									<div style="box-sizing: border-box; font-size: 16px !important;">This article was meant to let you know how to configure a custom domain name to your Github Page using Azure App
+										Service Domains. Feel free to experiment along. Next time, we need to have more articles on Networking</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /cards -->
+	</div>
+	<!-- /content -->
+
+	</div>
+	<!-- /container -->
+
+	</div>
+	
+	<!-- JS -->
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+	<script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+	<script src="../assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+	<script src="../assets/js/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+
+	<script src="../assets/js/slick.min.js"></script>
+
+	<script src="../assets/js/ajax-contact.html"></script>
+
+	<script src="../assets/js/jquery.appear.min.js"></script>
+
+	<script src="../assets/js/waypoints.min.js"></script>
+	<script src="../assets/js/jquery.counterup.min.js"></script>
+
+	<script src="../assets/js/jquery.easing.min.js"></script>
+	<script src="../assets/js/scrolling-nav.js"></script>
+
+	<script src="../assets/js/wow.min.js"></script>
+
+	<script src="../assets/js/main.js"></script>
+	<script defer src="../../static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"69cfd0ea2aae4840","version":"2021.9.0","r":1,"token":"e30b4e5ca0154d28b74c094697cafe5d","si":100}'></script>
+
+</body>
+
+
+<!-- Mirrored from saadaslams.com/articles/configuring-custom-domain by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Nov 2021 00:23:40 GMT -->
+</html>
